@@ -22,6 +22,7 @@ namespace XamCalculator2020
         private Button btnMinus;
         private Button btnMul;
         private Button btnDivide;
+        private Button btnBMI;
 
 
 
@@ -49,11 +50,20 @@ namespace XamCalculator2020
             btnMinus = FindViewById<Button>(Resource.Id.btnminus);
             btnMul = FindViewById<Button>(Resource.Id.btnmul);
             btnDivide = FindViewById<Button>(Resource.Id.btnDivide);
+            btnBMI = FindViewById<Button>(Resource.Id.btnLoadBMI);
 
 
             btnPlus.Click += onBtnPlus_Click;
             btnMinus.Click += onBtnMinus_Click;
 
+            btnBMI.Click += onBtnBMI_Click;
+
+
+        }
+
+        private void onBtnBMI_Click(object sender, EventArgs e)
+        {
+            StartActivity(typeof(BMIActivity));
         }
 
         private void onBtnMinus_Click(object sender, EventArgs e)

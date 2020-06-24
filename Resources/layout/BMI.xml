@@ -1,0 +1,121 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout1"
+    >
+    <TextView
+        android:text="BMI Calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/textView1"
+        android:textColor="#fff3196f"
+        android:textAlignment="center" 
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:text="Weight(kg)"
+            android:layout_width="wrap_content"
+            android:textColor="#fff3196f"
+            android:layout_height="match_parent"
+            android:id="@+id/textView2"
+            android:layout_weight="30"
+            android:textAlignment="gravity"
+            android:gravity="bottom|left"
+            android:paddingLeft="10px" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtWeight"
+            android:layout_weight="70"
+            android:inputType="numberDecimal"
+            android:hint="Enter your Weight"
+            android:textColorHint="#fff0bd88" 
+            
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:text="Height(cm)"
+            android:layout_width="wrap_content"
+            android:textColor="#fff3196f"
+            android:layout_height="match_parent"
+            android:id="@+id/textView3"
+            android:layout_weight="30"
+            android:textAlignment="gravity"
+            android:gravity="bottom|left"
+            android:paddingLeft="10px" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtHeight"
+            android:layout_weight="70"
+            android:inputType="numberDecimal"
+            android:hint="Enter your Height"
+            android:textColorHint="#fff0bd88" 
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4">
+
+        <TextView
+            android:text="Result"
+            android:layout_width="wrap_content"
+            android:textColor="#fff3196f"
+            android:layout_height="match_parent"
+            android:id="@+id/textView4"
+            android:layout_weight="30"
+            android:textAlignment="gravity"
+            android:gravity="bottom|left"
+            android:paddingLeft="10px" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/txtResult"
+            android:layout_weight="70"
+            android:inputType="numberDecimal" 
+             
+            />
+
+
+    </LinearLayout>
+    <Button
+        android:text="Calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCalculate" />
+    <TextView
+        android:text="Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMessage" />
+
+
+
+</LinearLayout>
